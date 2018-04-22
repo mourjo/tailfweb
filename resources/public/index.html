@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+var socket = new WebSocket("ws://" + location.host + "/tailf/");
+socket.onmessage = function(event) {
+            var div = document.getElementById("data");
+            div.innerHTML += event.data + "<br>";
+            y = document.body.scrollHeight;
+            window.scroll(0,y);
+}
+</script>
+</head>
+
+<body>
+  <div id="data" style="font-size: large;"></div>
+</body>
+</html>

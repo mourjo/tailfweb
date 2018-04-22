@@ -1,0 +1,16 @@
+/target
+.DS_Store
+.lein-repl-history
+.nrepl-port
+doc/intro.md
+.lein-failures
+.idea
+/pom.xml
+/docs
+logs/
+*.#*
+\#*
+/test/documentation/*
+/pom.xml.asc
+/logs/*
+*.iml
